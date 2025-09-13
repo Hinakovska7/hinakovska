@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+body {
+	font-family: san-serif;
+	font-size: 18px;
+	margin: 0;
+	font-size: 18px;
+}
+
+/*----------
+header
+----------*/
+header {
+	background-color: #cc402c;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #543838;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	background-color: #b4282c;
+	border: 1px solid #543838;
+}
+
+nav ul li {
+	width: 100%;
+	padding: 10px 0;
+}
+
+header a {
+	color: #ffffff;
+	padding: 5px 10px;
+	transition: all .5s;
+}
+
+header a:hover {
+	opacity: 0.5;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h1 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*----------
+main
+----------*/
+main {
+	background-color: #f0f0f0;
+	padding: 10px 0 40px 0;
+	margin: 0;
+}
+
+/*
+main h2 {
+	color: #202020;
+	text-align: center;
+	margin: 40px 0;
+}
+*/
+main h2 {
+	width: 80%;
+	text-align: center;
+	padding: 0.5em; /*文字周りの余白*/
+	margin: 20px auto;
+	color: #202020; /*文字色*/
+	background: #f8ccc8; /*背景色*/
+	border-bottom: solid 3px #543838; /*下線*/
+}
+
+/*
+main h3 {
+	color: #202020;
+	text-align: center;
+	margin: 40px 0;
+}
+*/
+main h3 {
+	width: 80%;
+	text-align: center;
+	padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
+	margin: 20px auto; color : #202020; /*文字色*/
+	background: #f8ccc8; /*背景色*/
+	border-left: solid 5px #ff8c90; /*左線*/
+	border-bottom: solid 3px #543838;
+	color: #202020; /*下線*/
+}
+
+main p {
+	color: #202020;
+	text-align: center;
+	margin: 40px 0;
+}
+
+main img {
+	width: 100%;
+}
+
+main a {
+	color: #202020;
+}
+
+main a:hover {
+	opacity: 0.5;
+	color: #202020;
+	text-decoration: none;
+}
+
+.mokuji {
+	background: #ffffff;
+	width: 250px;
+	margin: 30px auto;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.mokuji h3 {
+	text-align: center;
+	margin: 0;
+}
+
+.mokuji ul {
+	margin: 10px 0;
+}
+
+.mokuji a {
+	color: #202020;
+	transition: all .5s;
+}
+
+.mokuji a:hover {
+	opacity: 0.5;
+	color: #202020;
+	text-decoration: none;
+}
+
+.contents {
+	background-color: #ffffff;
+	width: 80%;
+	padding: 10px;
+	margin: 20px auto;
+	border-radius: 10px;
+}
+
+.contents p {
+	color: #202020;
+	text-align: left;
+	margin: 10px;
+}
+
+/*----------
+flow
+----------*/
+.balloon5 {
+	width: 80%;
+	padding: 10px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.balloon5 .faceicon {
+	float: left;
+	margin-right: -90px;
+	width: 80px;
+}
+
+.balloon5 .faceicon img {
+	width: 100%;
+	height: auto;
+	border: solid 3px #cc402c;
+	border-radius: 50%;
+}
+
+.balloon5 .chatting {
+	width: 100%;
+}
+
+.says {
+	display: inline-block;
+	position: relative;
+	margin: 5px 0 0 105px;
+	padding: 17px 13px;
+	border-radius: 12px;
+	background: #cc402c;
+}
+
+.says:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 18px;
+	left: -24px;
+	border: 12px solid transparent;
+	border-right: 12px solid #cc402c;
+}
+
+.says p {
+	color: #ffffff;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.says ol {
+	color: #ffffff;
+	text-align: left;
+	margin: 0;
+	padding: 0 30px;
+}
+
+/*----------
+dfn-box
+----------*/
+.dfn-box {
+	width: 80%;
+	margin: 2em auto;
+	background: #ffffff;
+	border-radius: 10px;
+}
+
+.dfn-box .box-title {
+	font-size: 1.2em;
+	background: #cc402c;
+	padding: 4px 20px;
+	text-align: left;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	border-radius: 10px 10px 0 0;
+}
+
+.dfn-box p {
+	text-align: left;
+	padding: 15px 20px;
+	margin: 0;
+	padding: 15px 20px;
+}
+
+.dfn-box ol {
+	margin: 10px 20px;
+}
+
+.dfn-box li {
+	padding: 5px;
+}
+
+/*----------
+pf-box
+----------*/
+.pf-box {
+	width: 80%;
+	padding: 0.5em 1em;
+	margin: 2em auto;
+	background: #ffffff;
+	border: dashed 2px #f8ccc8;
+	padding: 0.5em 1em; /*点線*/
+}
+
+.pf-box p {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+/*----------
+footer
+----------*/
+footer {
+	background-color: #cc402c;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 0 0 0;
+	border-top: 1px solid #543838;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+footer a:hover {
+	opacity: 0.5;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer p {
+	background-color: #b4282c;
+	margin: 10px 0 0 0;
+	padding: 0;
+	border-top: 1px solid #543838;
+	border-bottom: 1px solid #543838;
+}
