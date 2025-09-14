@@ -5,7 +5,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('hinakovska/include/header.html')
+    fetch('/hinakovska/hinakovska/include/header.html')
         .then(res =>  {
             if (res.ok) {
                 return res.text()
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
     
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('hinakovska/include/footer.html')
+    fetch('/hinakovska/hinakovska/include/footer.html')
         .then(res =>  {
             if (res.ok) {
                 return res.text()
