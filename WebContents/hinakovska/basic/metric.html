@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>ヒナコフシカ空間 | 距離空間</title>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h2>距離空間</h2>
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_hiro.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            位相空間論の導入として距離空間から始めるのは《正しい》ことだ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_emma.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            そうなの？どうして位相空間を導入することから始めないの？
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_hiro.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            理由はいくつかあるが、
+                        </p>
+                            <ol>
+                                <li>歴史的に、距離空間は位相空間より8年早く導入された</li>
+                                <li>教育的に、距離空間から始めたほうが自然でわかりやすい</li>
+                                <li>学術的に、距離空間は位相空間論において極めて重要な役割を果たす</li>
+                            </ol>
+                        <p>
+                            …といったようなことが挙げられる
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_emma.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            つまり、距離空間は位相空間を理解するための足掛かりになるんだね！
+                            そうとわかればさっそく距離空間について学ぼう！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <div class="dfn-box">
+                <div class="box-title">
+                    Definition 1.1
+                </div>
+                <p>
+                    集合 \( X \) と関数 \( d \colon X \times X \to \mathbb{R} \) の組 \( (X, d) \) が<b>距離空間</b>であるとは, 次の4つを満たすことをいう.
+                </p>
+                <ol start="0">
+                    <li>
+                        \( \forall x \in X \, (d(x, x) \geq 0). \)
+                    </li>
+                    <li>
+                        \( \forall x, y \in X \, (d(x, y) = 0 \leftrightarrow x = y). \)
+                    </li>
+                    <li>
+                        \( \forall x, y \in X \, (d(x, y) = d(y, x)). \)
+                    </li>
+                    <li>
+                        \( \forall x, y, z \in X \, (d(x, y) \leq d(x, z) + d(z, y)). \)
+                    </li>
+                </ol>
+                <p>
+                    このとき, \( x \in X \) を<b>点</b>, \( d \) を<b>距離関数</b>, \( x, y \in X \) に対して \( d(x, y) \) を<b>距離</b>という.
+                </p>
+            </div>
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_hiro.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            最も基本的な距離空間のひとつにEuclid空間が挙げられる
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <div class="dfn-box">
+                <div class="box-title">
+                    Example 1.2 (Euclid空間)
+                </div>
+                <p>
+                    \( \mathbb{R}^n \) の2点 \( x = (x_1, \cdots, x_n), y = (y_1, \cdots, y_n) \) に対して,
+                </p>
+                \[ d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2} \]
+                <p>
+                    と定める. このとき, \( d \) は \( \mathbb{R}^n \) 上の距離関数である. 
+                    \( (\mathbb{R}^n, d) \) を \( n \) 次元<b>Euclid空間</b>といい, \( d \) を<b>Euclid距離</b>という.
+                </p>
+            </div>
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_emma.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            中学生のときに勉強した平面や空間の距離はこの距離なんだね！
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <!-- 吹き出しはじめ -->
+            <div class="balloon5">
+                <div class="faceicon">
+                    <img src="../../img/icon_hiro.png">
+                </div>
+                <div class="chatting">
+                    <div class="says">
+                        <p>
+                            ところで、Euclud空間が《正しく》距離空間であることは直感的に明らかだが、
+                            最初はこれが本当に距離空間であることを確かめるべきだろう
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- 吹き出しおわり -->
+            
+            <div class="pf-box">
+                <p>
+                    条件3のみ確かめる.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../../js/include.js"></script>
+
+</body>
+</html>
